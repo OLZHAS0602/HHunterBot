@@ -4,6 +4,7 @@ from loader import dp
 from aiogram.dispatcher import FSMContext
 from keyboards.kb_worker import phonemarkup
 
+
 @dp.message_handler(CommandStart(), state="*")
 async def bot_start(message: types.Message, state: FSMContext):
     await state.finish()

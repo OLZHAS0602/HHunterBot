@@ -1,5 +1,11 @@
 import sqlite3
 
+#conn = sqlite3.connect('orders.db')
+#cur = conn.cursor()
+#cur.execute('SELECT * FROM Employers;')
+#res = cur.fetchall()
+#for row in res:
+#    print(row)
 async def connection():
     conn = sqlite3.connect('orders.db')
     #cur = conn.cursor()
